@@ -25,7 +25,7 @@ I've been mesmerized by rr for many years now. Though I've had some minor contri
 In this post I want to explain why you should be interested in a Rust port of a program (`rr`) that already exists and works well.
 
 ## Why port rr to Rust?
-If you're interested in rr, here are the main reasons that capture why it is a good idea to port rr to Rust and why you should be interested in this project:
+If you're interested in rr, here are the main reasons why it is a good idea to port rr to Rust and why you should be interested in this project:
 
 ### Reduce complexity, increase reliability
 C/C++ is a complex beast. As the Linux kernel gets more and more complex and gathers even more quirks, the rr codebase gets more and more complex too. With Rust the hope is that we have a clean and modern language that allows us to manage the complexity of record/replay. Of course, we still need to deal with the inherent complexity of record/replay but Rust helps with writing reliable code and doing refactorings with more confidence. 
@@ -40,7 +40,7 @@ Just like there can be multiple compilers for the same language, it might be a g
 This is something for the future. The hope is rd can become a playground for experimentation and implement some innovative features in record/replay. Also rd has access to the awesome Rust cargo ecosystem which means that functionality already implemented elsewhere can be added to it much more easily.
 
 ### Be more memory safe
-As rd is written in Rust, the hope is that the implementation is more memory safe. However, as rr is mostly run in environments where it's not critical to have memory safety so this may not be valuable to most users. However, it's possible there might be usage scenarios where the memory safety of Rust might be valuable.
+As rd is written in Rust, the hope is that the implementation is more memory safe. However, as rr is mostly run in environments where it's not critical to have memory safety this feature may not be valuable to most users. However, it's possible there might be usage scenarios where the memory safety of Rust might be valuable.
 
 ## What's next?
 Please [check](https://github.com/sidkshatriya/rd) the project out and play around with it. Let me know what you think. Contributions to the `rd` project are welcome!
