@@ -10,5 +10,7 @@ Copyright © 2020, Sidharth Kshatriya
 
 ## Announcements & Blogs
 
+- [Introducing rd: A port of mozilla/rr to the Rust programming language](https://github.com/sidkshatriya/me/blob/master/001-rd-intro.md)
+
 ## Technical Articles
 - [How the dontbug debugger works](https://github.com/sidkshatriya/dontbug/wiki/How-the-Dontbug-Debugger-works)
