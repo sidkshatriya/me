@@ -6,9 +6,9 @@ _13 August 2020_
 
 My last post introducing [`rd`](https://github.com/sidkshatriya/rd), a Rust port of the [mozilla/rr](https://github.com/mozilla/rr) debugger got an enthusiastic [response](https://www.reddit.com/r/rust/comments/i8bmgq/rd_a_port_of_mozillarr_to_the_rust_programming/) on the reddit rust channel.
 
-Feeling encouraged, today I'll like to talk more about why I chose Rust (instead of some other languages I was considering).
+Today I'll like to talk more about why I chose Rust (instead of some other languages I was considering).
 
-Please read my [previous post](https://github.com/sidkshatriya/me/blob/master/001-rd-intro.md) to get more context.
+Please read my [previous post](https://github.com/sidkshatriya/me/blob/master/001-rd-intro.md) to get more context and background.
 
 Before deciding to port rr to Rust I seriously considered using Golang, OCaml, dlang also. Why did I end up chosing Rust in the end? Here are the factors that entered my mind while making this decision...
 
