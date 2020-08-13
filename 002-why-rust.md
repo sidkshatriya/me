@@ -2,7 +2,7 @@ _13 August 2020_
 
 ### [Other writings](https://github.com/sidkshatriya/me/blob/master/README.md)
 
-# `rd`: Why did I choose Rust for the mozilla/rr debugger port?
+#  `rd`: Why I chose Rust instead of Golang, OCaml or Dlang for the mozilla/rr debugger port
 
 My last post introducing [`rd`](https://github.com/sidkshatriya/rd), a Rust port of the [mozilla/rr](https://github.com/mozilla/rr) debugger got an enthusiastic [response](https://www.reddit.com/r/rust/comments/i8bmgq/rd_a_port_of_mozillarr_to_the_rust_programming/) on the reddit rust channel.
 
