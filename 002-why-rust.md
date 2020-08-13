@@ -24,7 +24,7 @@ Not only do debuggers need to use ptrace, they need to use ptrace _a lot_. So sp
 
 So in summary, it was _not_ really important to choose Rust for performance reasons. System calls like ptrace are really slow and we can't avoid _all_ of them. Therefore Golang and OCaml could have been used for rd also. A good amount of speedup comes from avoiding context switches between debugger and debuggee via the syscall buffering mechanism mentioned above which does not even run in the debugger.
 
-In conclusion, I could have chosen golang, dlang, OCaml to port rr to. The bottlenecks for a system like rr are the system calls that need to be intercepted and then recorded during the recording phase and the bottleneck is (partially) resolved by tracee side code injection. This is somewhat akin to using Python, Ruby and PHP on your websites. Often the network latency + database access latency dominates and for many scenarios it does not matter if you used Rust or Python.
+In conclusion, I could have chosen golang, dlang, OCaml to port rr to. The bottlenecks for a system like rr are the system calls that need to be intercepted and then recorded during the recording phase and the bottleneck is (partially) resolved by tracee side code injection. This is somewhat akin to using Python, Ruby and PHP on your websites. Often the network latency + database access latency dominates and for many scenarios it does not matter if you used Rust or Python. (P.S. Yeah... I know there are problems with this analogy. I basically just wanted to bring home the point that rd _could_ have been written in Golang/Ocaml also)
 
 ## Multithreading was _not_ a consideration while choosing Rust.
 
