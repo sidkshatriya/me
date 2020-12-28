@@ -81,4 +81,7 @@ I'm constantly reminded of the speed difference when I look at the equivalent `r
 
 I hope you liked this update. Please check the [project](https://github.com/sidkshatriya/rd) out and play around with it! 
 
+### Comments
+You can add your comments on this [reddit post](https://www.reddit.com/r/rust/comments/klnddg/45000_lines_of_rust_code_later_an_update_on_the/)
+
 _P.S. I'm currently looking for opportunities in the Rust and/or Systems Programming space. I'd love to speak with you further if you know of any. Please check my GitHub profile for contact details._
