@@ -75,7 +75,7 @@ I will write a separate post one day singing paeans to the kakoune editor :-) !
 
 ## What is preventing Rust from achieving total world domination?
 
-I've loved Rust more and more as this port has progressed. In my opinion the only thing really holding it back is that the IDE/compilation experience is still too slow for my taste. Rust-Analyzer does a good job and I'm really happy with it. However, I'd like it to be faster. I'd like Rust compilation to be a bit faster too. (There are some workarounds like breaking your project into multiple crates etc. I haven't heeded that advice yet) 
+I've loved Rust more and more as this port has progressed. In my opinion the only thing really holding it back is that the IDE/compilation experience is still too slow for my taste. Rust Analyzer does a good job and I'm really happy with it. However, I'd like it to be faster. I'd like Rust compilation to be a bit faster too. (There are some workarounds like breaking your project into multiple crates etc. I haven't heeded that advice yet) 
 
 I'm constantly reminded of the speed difference when I look at the equivalent `rr` C/C++ codebase. Everything is so lightning fast from the IDE/editor experience to compilation in comparison to Rust! Hopefully Rust will get there. During the course of the execution of the port, things have progressively gotten better in this area but there is still a long way to go...
 
