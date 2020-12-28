@@ -12,6 +12,7 @@ Copyright © 2020, Sidharth Kshatriya
 
 - [12 Aug 2020 - Introducing rd: A port of mozilla/rr to the Rust programming language](https://github.com/sidkshatriya/me/blob/master/001-rd-intro.md)
 - [13 Aug 2020 - rd: Why I chose Rust instead of Golang, OCaml or Dlang for the mozilla/rr debugger port](https://github.com/sidkshatriya/me/blob/master/002-why-rust.md)
+- [28 Dec 2020 - 45,000+ lines of Rust code later: An update on the Record & Debug Tool (rd)](https://github.com/sidkshatriya/me/blob/master/003-Rd-makes-significant-advances.md)
 
 ## Technical Articles
 - [How the dontbug debugger works](https://github.com/sidkshatriya/dontbug/wiki/How-the-Dontbug-Debugger-works)
