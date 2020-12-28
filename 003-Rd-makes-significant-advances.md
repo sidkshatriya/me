@@ -71,7 +71,7 @@ In `kak` you make the selection first and then select the action (rather than th
 
 Like all modal editors, mastery will lead to a lot of time saved. Also because the editor is running in a terminal, things tends to be faster compared to browser/java based IDEs/editors. In Rust, things are already quite slow when it comes to editor completion/code checks so using a terminal based editor can give you that extra boost of responsiveness.
 
-I will write a separate post one day singing paeans to the kakoune editor :-) !
+I will write a separate post one day singing paeans to the kakoune editor :-) ! In the meanwhile here is a great [article](https://kakoune.org/why-kakoune/why-kakoune.html) on Kakoune by its creator.
 
 ## What is preventing Rust from achieving total world domination?
 
