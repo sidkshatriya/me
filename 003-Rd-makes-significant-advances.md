@@ -67,7 +67,7 @@ The main combination I have been using for some time now is the `kakoune` editor
 
 `kakoune` is a modal editor like `vim/neovim` but better (in my opinion) in a few fundamental respects. 
 
-In `kak` you make the selection first and then select the action. This simple but revolutionary difference makes modal editing so much simpler. Please checkout [kakoune.org](https://kakoune.org). The kakoune editor is a gem. As software developers, we're all quite passionate about the tools we use and I'm very passionate about kak.
+In `kak` you make the selection first and then select the action (rather than the other way around as in vim). This simple but revolutionary difference makes modal editing so much simpler (and I would even say more powerful) than vim. Please checkout [kakoune.org](https://kakoune.org). The kakoune editor is a gem. As software developers, we're all quite passionate about the tools we use and I'm very passionate about kak.
 
 Like all modal editors, mastery will lead to a lot of time saved. Also because the editor is running in a terminal, things tends to be faster compared to browser/java based IDEs/editors. In Rust, things are already quite slow when it comes to editor completion/code checks so using a terminal based editor can give you that extra boost of responsiveness.
 
