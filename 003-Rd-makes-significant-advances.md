@@ -55,7 +55,7 @@ One of the superpowers of Rust is that if it compiles, it will usually work. Thi
 
 Another one of the reasons why the port has been able to make so much progress and is generally quite robust is the original project `rr`'s amazing test suite. Usually, C/C++ codebases don't have too many tests. `rr` bucks this trend and it has 2000+ tests that exercise its record and replay system. I used this test suite with `rd`. Pretty soon, it became a game -- every additional test which `rd` succeeded on became a brain reward for me and an opportunity to work on the next bug or feature (or "puzzles" as my brain started viewing them).
 
-So if you're looking to port over a project to <your-favorite-language>, make sure there is a large test-suite. Not only will it help you with robustness and correctness, it will become a fun "arcade" game as you keep working on boosting your test pass-percentage.
+So if you're looking to port over a project to _your_favorite_language_, make sure there is a large test-suite. Not only will it help you with robustness and correctness, it will become a fun "arcade" game as you keep working on boosting your test pass-percentage.
 
 For completeness, I want to also appreciate `rr`'s amazing logs that let you know what the program is doing as its records/replays execution of a program. These logs were invaluable in solving bugs in the `rd` port. I would simply compare the logs produced by `rd` and `rr` in many situations and this has helped me solve some complex bugs in the `rd` port.
 
