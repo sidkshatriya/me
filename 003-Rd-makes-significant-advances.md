@@ -17,11 +17,11 @@ For those people who would like a quick update on what is working and what is no
 
 ## Update
 
-The biggest change since August 2020 is that `rd` can record program executions just like `rr`. A viable way of using the project now is to record your program execution with `rd` and then replay using with `rr`. (`rd` supports replay of program traces but in non-interative mode only, currently). 
+The biggest change since August 2020 is that `rd` can record program executions just like `rr`. A viable way of using the project now is to record your program execution with `rd` and then replay using with `rr`. (`rd` supports replay of program traces but in non-interactive replay mode only, currently). 
 
-What does "interactive replay" mean anyways? Interative replay means that you can use gdb while replaying your program. In traditional debugging you are only able to run the program forward. `rr` allows you run the program forwards and backwards while doing the usual things like setting breakpoints, inspecting the stack, looking at variables etc in the gdb frontend. `rr` does this by presenting a backend engine to the gdb front-end. This work is still incomplete in the `rd` port. However, `rd` has  non-interative replay (`replay -a`) which causes the whole register accurate replay to actually happen internally.
+What does "interactive replay" mean anyways? Interative replay means that you can use `gdb` while replaying your program. In traditional debugging you are only able to run the program forward. `rr` allows you run the program forwards and backwards while doing the usual things like setting breakpoints, inspecting the stack, looking at variables etc in the gdb frontend. `rr` does this by presenting a backend engine to the `gdb` front-end. This work is still incomplete in the `rd` port. However, `rd` has  non-interative replay (`replay -a`) which causes the whole register accurate replay to actually happen internally.
 
-The heart of the `rr` project is the record & replay logic which has successfully been ported over. The gdb backend and related functionality is a relatively smaller piece of code (compared to say the record/replay logic). In other words, the completion of this porting project is in sight!!
+The heart of the `rr` project is the record & replay logic which has successfully been ported over. The `gdb` backend and related functionality is a relatively smaller piece of code (compared to say the record/replay logic). In other words, the completion of this porting project is in sight!!
 
 Now that the update of the project is out of the way, I'd like to share some of my thoughts, feelings and motivations after having worked on this project thus far. I will also share some tips and suggestions in case you're thinking of embarking on a personal project.
 
