@@ -53,9 +53,9 @@ One of the superpowers of Rust is that if it compiles, it will usually work. Thi
 
 ## Test suites are valuable and so are logs
 
-Another one of the reasons why the port has been able to make so much progress and is generally quite robust is the original project, `rr`'s amazing test suite. Usually, C/C++ codebases don't have too many tests. `rr` bucks this trend and it has 2000+ tests that exercise its record and replay system. I used this test suite with `rd`. Pretty soon, it becomes a game -- every additional test which `rd` succeeded on became a brain reward for me and an opportunity to work on the next bug or feature (or "puzzles" as my brain started viewing them).
+Another one of the reasons why the port has been able to make so much progress and is generally quite robust is the original project `rr`'s amazing test suite. Usually, C/C++ codebases don't have too many tests. `rr` bucks this trend and it has 2000+ tests that exercise its record and replay system. I used this test suite with `rd`. Pretty soon, it became a game -- every additional test which `rd` succeeded on became a brain reward for me and an opportunity to work on the next bug or feature (or "puzzles" as my brain started viewing them).
 
-So if you're looking to port over a project to <your-favorite-language> make sure there is a large test-suite. Not only will it help you with robustness and correctness, it will become a fun "arcade" game as you keep working on boosting your test pass-percentage.
+So if you're looking to port over a project to <your-favorite-language>, make sure there is a large test-suite. Not only will it help you with robustness and correctness, it will become a fun "arcade" game as you keep working on boosting your test pass-percentage.
 
 For completeness, I want to also appreciate `rr`'s amazing logs that let you know what the program is doing as its records/replays execution of a program. These logs were invaluable in solving bugs in the `rd` port. I would simply compare the logs produced by `rd` and `rr` in many situations and this has helped me solve some complex bugs in the `rd` port.
 
@@ -67,7 +67,7 @@ The main combination I have been using for some time now is the `kakoune` editor
 
 `kakoune` is a modal editor like `vim/neovim` but better (in my opinion) in a few fundamental respects. 
 
-In `kak` you make the selection first and then select the action (rather than the other way around as in vim). This simple but revolutionary difference makes modal editing so much simpler (and I would even say more powerful) than vim. Please checkout [kakoune.org](https://kakoune.org). The kakoune editor is a gem. As software developers, we're all quite passionate about the tools we use and I'm very passionate about kak.
+In `kak` you make the selection first and then select the action (rather than the other way around as in vim). This simple difference makes modal editing so much better (and I would even say more powerful) than vim. Please checkout [kakoune.org](https://kakoune.org). The kakoune editor is a gem. As software developers, we're all quite passionate about the tools we use and I'm very passionate about kak.
 
 Like all modal editors, mastery will lead to a lot of time saved. Also because the editor is running in a terminal, things tends to be faster compared to browser/java based IDEs/editors. In Rust, things are already quite slow when it comes to editor completion/code checks so using a terminal based editor can give you that extra boost of responsiveness.
 
