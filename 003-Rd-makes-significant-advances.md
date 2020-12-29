@@ -6,7 +6,7 @@ _28 Dec 2020_
 
 The Record & Debug Tool ([`rd`](https://github.com/sidkshatriya/rd)) is a record/replay debugger written in Rust.
 
-Its been been about 4 months since my last writeup on `rd`. `rd` is an effort to port the fantastic [rr](https://github.com/rr-debugger/rr) project from C/C++ to Rust. Why is this a good idea? Why Rust? For that, please read some of my older posts:
+It's been about 4 months since my last writeup on `rd`. `rd` is an effort to port the fantastic [rr](https://github.com/rr-debugger/rr) project from C/C++ to Rust. Why is this a good idea? Why Rust? For that, please read some of my older posts:
 
 - [12 Aug 2020 - Introducing rd: A port of mozilla/rr to the Rust programming language](https://github.com/sidkshatriya/me/blob/master/001-rd-intro.md)
 - [13 Aug 2020 - rd: Why I chose Rust instead of Golang, OCaml or Dlang for the mozilla/rr debugger port](https://github.com/sidkshatriya/me/blob/master/002-why-rust.md)
@@ -33,9 +33,9 @@ The traditional path to mastery and knowledge is to implement a substantial feat
 
 ## Stop looking at the goal to make progress
 
-The `rr` project contains the toughest code I've ever read. Its intimidating. Its a huge project with tens of thousands of lines of C/C++ code written by some absolutely brilliant engineers. There were many moments that I just thought I should give up. But I kept persevering and now I can see the finish line ahead. There is a good amount of work still left on this port but I think the toughest challenges have probably been surmounted. 
+The `rr` project contains the toughest code I've ever read. it's intimidating. it's a huge project with tens of thousands of lines of C/C++ code written by some absolutely brilliant engineers. There were many moments that I just thought I should give up. But I kept persevering and now I can see the finish line ahead. There is a good amount of work still left on this port but I think the toughest challenges have probably been surmounted. 
 
-The trick that I used throughtout this project was to stop thinking about the end goal. I avoided thinking about where I am on the project. I just kept my head down and kept working on it. The key learning here is that you sometimes need to fool yourself and not think about how much of the journey is left. Because if you do that, then you start panicking and wondering if its going to be possible.
+The trick that I used throughtout this project was to stop thinking about the end goal. I avoided thinking about where I am on the project. I just kept my head down and kept working on it. The key learning here is that you sometimes need to fool yourself and not think about how much of the journey is left. Because if you do that, then you start panicking and wondering if it's going to be possible.
 
 Today `rd` has 45,000+ lines of ported over Rust code! This is the power of incremental progress
 
@@ -45,7 +45,7 @@ Another approach which I followed on this project was to avoid a peaky work sche
 
 ## Don't let perfect be the enemy of the good
 
-A port is a messy venture. Especially from C/C++ to Rust. The `rr` codebase is Object Oriented while Rust is not. So its been quite a task to translate that to Rust. Also Rust places so much emphasis on borrowing and ownership that the code sometimes feels polluted by those considerations. Due to these two factors I often felt that the Rust codebase was not as succinct as the C/C++ codebase. I sometimes feel that I needed to produce a more elegant Rust codebase. But in my experience its better to get things working and then progressively improve things. My ongoing goal is to continue making the port more idiomatic Rust and improve code elegance but my emphasis is first on getting things working. Perfection can wait.
+A port is a messy venture. Especially from C/C++ to Rust. The `rr` codebase is Object Oriented while Rust is not. So it's been quite a task to translate that to Rust. Also Rust places so much emphasis on borrowing and ownership that the code sometimes feels polluted by those considerations. Due to these two factors I often felt that the Rust codebase was not as succinct as the C/C++ codebase. I sometimes feel that I needed to produce a more elegant Rust codebase. But in my experience it's better to get things working and then progressively improve things. My ongoing goal is to continue making the port more idiomatic Rust and improve code elegance but my emphasis is first on getting things working. Perfection can wait.
 
 ## If it compiles, it works
 
@@ -57,7 +57,7 @@ Another one of the reasons why the port has been able to make so much progress a
 
 So if you're looking to port over a project to _your_favorite_language_, make sure there is a large test-suite. Not only will it help you with robustness and correctness, it will become a fun "arcade" game as you keep working on boosting your test pass-percentage.
 
-For completeness, I want to also appreciate `rr`'s amazing logs that let you know what the program is doing as its records/replays execution of a program. These logs were invaluable in solving bugs in the `rd` port. I would simply compare the logs produced by `rd` and `rr` in many situations and this has helped me solve some complex bugs in the `rd` port.
+For completeness, I want to also appreciate `rr`'s amazing logs that let you know what the program is doing as it records/replays execution of a program. These logs were invaluable in solving bugs in the `rd` port. I would simply compare the logs produced by `rd` and `rr` in many situations and this has helped me solve some complex bugs in the `rd` port.
 
 ## A "Shout Out" to the kakoune modal editor
 
