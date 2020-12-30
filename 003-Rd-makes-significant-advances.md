@@ -33,7 +33,7 @@ The traditional path to mastery and knowledge is to implement a substantial feat
 
 ## Stop looking at the goal to make progress
 
-The `rr` project contains the toughest code I've ever read. it's intimidating. it's a huge project with tens of thousands of lines of C/C++ code written by some absolutely brilliant engineers. There were many moments that I just thought I should give up. But I kept persevering and now I can see the finish line ahead. There is a good amount of work still left on this port but I think the toughest challenges have probably been surmounted. 
+The `rr` project contains the toughest code I've ever read. It's intimidating. It's a huge project with tens of thousands of lines of C/C++ code written by some absolutely brilliant engineers. There were many moments that I just thought I should give up. But I kept persevering and now I can see the finish line ahead. There is a good amount of work still left on this port but I think the toughest challenges have probably been surmounted. 
 
 The trick that I used throughtout this project was to stop thinking about the end goal. I avoided thinking about where I am on the project. I just kept my head down and kept working on it. The key learning here is that you sometimes need to fool yourself and not think about how much of the journey is left. Because if you do that, then you start panicking and wondering if it's going to be possible.
 
