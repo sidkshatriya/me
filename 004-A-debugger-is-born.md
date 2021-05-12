@@ -58,7 +58,7 @@ Sadly due to historical reasons, `rr` is also built in C/C++. Some of main devel
 
 However, does that mean that like LLVM we are forever stuck with C/C++ for a foundational piece of debugging software like `rr`?
 
-**No**. the `rd` port of `rr` to Rust is my attempt to change that inevitability. I've been obsessed by reverse-debugging for some time. I also believe that often the best way to learn something really well is to re-do it in some way. The `rd` port has been the expression of my love affair with the record-and-replay paradigm of debugging. I'm very happy that I've been able to come so far. Many times I thought I should give up -- I've documented my experiences while porting `rr` to Rust in the previous blogs that I linked above.
+**No**. The `rd` port of `rr` to Rust is my attempt to change that inevitability. I've been obsessed by reverse-debugging for some time. I also believe that often the best way to learn something really well is to re-do it in some way. The `rd` port has been the expression of my love affair with the record-and-replay paradigm of debugging. I'm very happy that I've been able to come so far. Many times I thought I should give up -- I've documented my experiences while porting `rr` to Rust in the previous blogs that I linked above.
 
 This port has been a long and lonely journey so far but I think `rd` has reached a stage that end-users can use it. Hopefully now that this project has reached this milestone, other developers can play around with it too and give feedback and contribute.
 
