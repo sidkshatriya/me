@@ -4,7 +4,7 @@ _12 May 2021_
 
 #  55,000+ lines of Rust code later: A debugger is born!
 
-I am proud to announce that the Record & Debug Tool ([`rd`](https://github.com/sidkshatriya/rd)) has entered alpha.
+I am proud to announce that the [Record & Debug Tool (`rd`)](https://github.com/sidkshatriya/rd) has entered alpha.
 
 The Record & Debug Tool ([`rd`](https://github.com/sidkshatriya/rd)) is a record/replay debugger written in Rust. It is a project to port the [rr](https://github.com/rr-debugger/rr) project from C/C++ to Rust. Why is this a good idea? Why Rust? For that, please read some of my older posts and updates:
 
