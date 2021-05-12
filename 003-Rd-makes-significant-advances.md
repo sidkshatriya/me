@@ -1,6 +1,6 @@
 _28 Dec 2020_
 
-### [Other writings](https://github.com/sidkshatriya/me/blob/master/README.md)
+### [Other writings](README.md)
 
 #  45,000+ lines of Rust code later: An update on the Record & Debug Tool (`rd`)
 
@@ -8,8 +8,8 @@ The Record & Debug Tool ([`rd`](https://github.com/sidkshatriya/rd)) is a record
 
 It's been about 4 months since my last writeup on `rd`. `rd` is an effort to port the fantastic [rr](https://github.com/rr-debugger/rr) project from C/C++ to Rust. Why is this a good idea? Why Rust? For that, please read some of my older posts:
 
-- [12 Aug 2020 - Introducing rd: A port of mozilla/rr to the Rust programming language](https://github.com/sidkshatriya/me/blob/master/001-rd-intro.md)
-- [13 Aug 2020 - rd: Why I chose Rust instead of Golang, OCaml or Dlang for the mozilla/rr debugger port](https://github.com/sidkshatriya/me/blob/master/002-why-rust.md)
+- [12 Aug 2020 - Introducing rd: A port of mozilla/rr to the Rust programming language](001-rd-intro.md)
+- [13 Aug 2020 - rd: Why I chose Rust instead of Golang, OCaml or Dlang for the mozilla/rr debugger port](002-why-rust.md)
 
 Today, I'm going to give you an update on the progress that has been made since the above writeups in August 2020. I will also talk about how the porting effort is progressing, my thoughts on Rust, some tips and suggestions if you're about embark on your own project, and more.
 

@@ -1,6 +1,6 @@
 _13 August 2020_
 
-### [Other writings](https://github.com/sidkshatriya/me/blob/master/README.md)
+### [Other writings](README.md)
 
 #  `rd`: Why I chose Rust instead of Golang, OCaml or Dlang for the mozilla/rr debugger port
 
@@ -8,7 +8,7 @@ My last post introducing [`rd`](https://github.com/sidkshatriya/rd), a Rust port
 
 Today I'll like to talk more about why I chose Rust (instead of some other languages I was considering).
 
-Please read my [previous post](https://github.com/sidkshatriya/me/blob/master/001-rd-intro.md) to get more context and background.
+Please read my [previous post](001-rd-intro.md) to get more context and background.
 
 Before deciding to port rr to Rust I seriously considered using Golang, OCaml, dlang also. Why did I end up chosing Rust in the end? Here are the factors that entered my mind while making this decision...
 

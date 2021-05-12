@@ -1,5 +1,5 @@
 _12 August 2020_ 
-### [Other writings](https://github.com/sidkshatriya/me/blob/master/README.md)
+### [Other writings](README.md)
 
 # `rd`: A port of mozilla/rr to Rust programming language
 
