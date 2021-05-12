@@ -52,7 +52,7 @@ Of course, I want to point out that record-replay debugging in the `rr` paradigm
 
 ## A debugger written in Rust: `rd`
 
-So where does `rd` come into the picture? A huge amount of compiler/debugger infrastructure is built in the C/C++ language (gcc, llvm, gdb, lldb, Swift, javac etc). The problems and complexity of C/C++ are well documented. Writing effective C/C++ is like walking a tightrope: a small mistake and you'll basically fall to your death. Modern languages like Rust provide extra guard-rails while not compromising on performance. They also don't assume that it's programmers are as smart as Herb Sutter! :-). Tough things like concurrency and parallelism in C/C++ become easier in Rust.
+So where does `rd` come into the picture? A huge amount of compiler/debugger infrastructure is built in the C/C++ language (gcc, llvm, gdb, lldb, Swift, javac etc). The problems and complexity of C/C++ are well documented. Writing effective C/C++ is like walking a tightrope: a small mistake and you'll basically fall to your death. Modern languages like Rust provide extra guard-rails while not compromising on performance. They also don't assume that its programmers are as smart as Herb Sutter! :-). Tough things like concurrency and parallelism in C/C++ become easier in Rust.
 
 Sadly due to historical reasons, `rr` is also built in C/C++. Some of main developers of `rr` are huge Rust fans and I'm pretty sure if `rr` were built by them today, they would choose Rust as the implementation language. See this [interesting](https://github.com/rr-debugger/rr/issues/2181) discussion.
 
