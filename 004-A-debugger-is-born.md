@@ -10,7 +10,7 @@ The Record & Debug Tool ([`rd`](https://github.com/sidkshatriya/rd)) is a record
 
 - [12 Aug 2020 - Introducing rd: A port of mozilla/rr to the Rust programming language](001-rd-intro.md)
 - [13 Aug 2020 - rd: Why I chose Rust instead of Golang, OCaml or Dlang for the mozilla/rr debugger port](002-why-rust.md)
-- [28 Dec 2020 - 45,000+ lines of Rust code later: An update on the Record & Debug Tool (`rd`)](004-A-debugger-is-born.md)
+- [28 Dec 2020 - 45,000+ lines of Rust code later: An update on the Record & Debug Tool (`rd`)](003-Rd-makes-significant-advances.md)
 
 **Current Status**: The port is substantially complete and is currently of an alpha level quality. You should be able to use `rd` for the tasks you would ordinarily use `rr` for. The `rr` project keeps accumulating features and fixes and many of them have not found their way into rd yet. However, my expectation is that `rd` should be reasonably robust, complete and usable now. Please try it out!
 
@@ -65,3 +65,7 @@ This port has been a long and lonely journey so far but I think `rd` has reached
 I have a few dreams and plans for `rd`. My hope is that in the future it can become a laboratory for some exiting features in debugging. But this will only come to fruition once `rd` becomes a reliable and much loved piece of software that `rr` already is.
 
 Please play around with `rd` and let me know if things worked out for you. This is alpha level software, so I apologise in advance if things don't work as expected!
+
+---
+
+Thanks to @UtherII for bringing a bad http link in this blog post to my attention!
