@@ -68,4 +68,4 @@ Please play around with `rd` and let me know if things worked out for you. This 
 
 ---
 
-Thanks to @UtherII for bringing a bad http link in this blog post to my attention!
+Thanks to @UtherII for bringing a incorrect http link in this blog post to my attention!
