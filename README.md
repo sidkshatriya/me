@@ -8,6 +8,8 @@ All Rights Reserved
 Copyright © 2020, 2021 Sidharth Kshatriya
 ```
 
+_As this is personal blog, I don't accept any PRs to it currently. If you wish to bring something important to my attention regarding any blog post, you can file an issue. Thanks for reading!_
+
 ## Announcements & Blogs
 
 - [12 Aug 2020 - Introducing rd: A port of mozilla/rr to the Rust programming language](001-rd-intro.md)
