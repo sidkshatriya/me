@@ -8,7 +8,7 @@ All Rights Reserved
 Copyright © 2020, 2021 Sidharth Kshatriya
 ```
 
-_As this is personal blog, I don't accept any PRs to it currently. If you wish to bring something important to my attention regarding any blog post, you can file an issue. Thanks for reading!_
+_As this is a personal blog, I don't accept any PRs to it currently. If you wish to bring something important to my attention regarding any blog post, you can file an issue. Thanks for reading!_
 
 ## Announcements & Blogs
 
