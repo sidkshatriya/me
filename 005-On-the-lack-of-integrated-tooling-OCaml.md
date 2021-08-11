@@ -2,7 +2,7 @@ _11 August 2021_
 
 ### [Other writings](README.md)
 
-#  Thoughts on Ocaml & Haskell and OCaml's (supposedly) pathetic state of tooling
+#  General thoughts on Ocaml & Haskell and OCaml's (supposedly) pathetic state of tooling
 
 ## Prelude
 
