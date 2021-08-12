@@ -18,7 +18,7 @@ And finally yes, for those who follow OCaml from a distance: OCaml multicore is 
 
 ## Ok OCaml is good -- but isn't OCaml tooling horrible?
 
-There is a current trope that while OCaml the language is decent the tooling is horrible, attrocious and incomprehensible. The problem is that we've been spoiled by new generation of languages like Rust that have learn from their predecessors and built some great integrated tooling from day 1. `cargo` is a best of breed language specific build tool. It handles package management, building, documentation. All these things are handled by separate tools in some of other older languages.
+There is a current trope that while OCaml the language is decent the tooling is horrible, attrocious and incomprehensible. The problem is that we've been spoiled by new generation of languages like Rust that have learnt from their predecessors and built some great integrated tooling from day 1. `cargo` is a best of breed language specific build tool. It handles package management, building, documentation. All these things are handled by separate tools in some of other older languages.
 
 Such is the case with OCaml. In its long evolution from 1996, it has had many build systems and ancillary tools. The growth of tooling has been organic and not resulted in a monolithic, super consistent tool like `cargo`. Its unfortunate but this is a legacy issue. But in 2021 I will recommend:
 
