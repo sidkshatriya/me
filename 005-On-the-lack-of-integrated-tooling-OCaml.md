@@ -67,3 +67,5 @@ OCaml has decent set of available libraries. Yes, its not as good as say Golang 
 
 So, hopefully exited by the interesting set of tradeoffs that OCaml has made, I invite you to learn OCaml, not worry about how many stars your repo in OCaml will get (it won't get too many right now) and simply for the love of the language build something cool!
 
+---
+You can discuss this blog post at [discuss.ocaml.org](https://discuss.ocaml.org/t/blog-general-thoughts-on-ocaml-haskell-and-ocamls-supposedly-pathetic-state-of-tooling/8287)
