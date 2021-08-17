@@ -52,7 +52,7 @@ And on the pedestal these words appear:
 Look on my works, ye Mighty, and despair!'
 Nothing beside remains. Round the decay
 Of that colossal wreck, boundless and bare
-The lone and level sands stretch far away.
+The lone and level sands stretch far away."
 ```
 From [Ozymandias by Shelley](https://en.wikipedia.org/wiki/Ozymandias)
 
