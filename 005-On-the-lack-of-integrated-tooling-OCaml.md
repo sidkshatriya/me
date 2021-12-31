@@ -22,7 +22,7 @@ There is a current trope that while OCaml the language is decent the tooling is 
 
 Such is the case with OCaml. In its long evolution from 1996, it has had many build systems and ancillary tools. The growth of tooling has been organic and not resulted in a monolithic, super consistent tool like `cargo`. Its unfortunate but this is a legacy issue. But in 2021 I will recommend:
 
-### The OCaml Tooling Cannon for 2021
+### The OCaml Tooling Canon for 2021
 - Dune as your build tool
 - Opam as your package manager
 - [`ocaml-lsp-server`](https://github.com/ocaml/ocaml-lsp) as your LSP server (this has an associated vscode plugin if you're into VSCode), You can just use the lsp server directly if you are using Neovim (after you make the appropriate configuration in `lsp-config`). If you use Kakoune, then install the `kak-lsp` plugin which allows you to use a variety of LSPs with Kakoune (including the `ocaml-lsp-server`). 
@@ -69,3 +69,5 @@ So, hopefully exited by the interesting set of tradeoffs that OCaml has made, I 
 
 ---
 You can discuss this blog post at [discuss.ocaml.org](https://discuss.ocaml.org/t/blog-general-thoughts-on-ocaml-haskell-and-ocamls-supposedly-pathetic-state-of-tooling/8287)
+
+Thanks to Olivier Faure for pointing out a spelling error.
