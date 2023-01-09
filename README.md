@@ -5,7 +5,7 @@ This is a space where I can express my thoughts and opinions on mostly technical
 _All content in this repository is, unless otherwise specified_:
 ```
 All Rights Reserved
-Copyright © 2020, 2021 Sidharth Kshatriya
+Copyright © 2020-2023 Sidharth Kshatriya
 ```
 
 _As this is a personal blog, I don't accept any Pull Requests to it currently. If you wish to bring something important to my attention regarding any blog post, you can file an issue. Thanks for reading!_
