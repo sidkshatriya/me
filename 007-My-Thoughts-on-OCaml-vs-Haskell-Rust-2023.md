@@ -302,7 +302,7 @@ drawing me back and is worth recalling:
 * The compiler/type checker is super-fast and everything just feels responsive, lightweight and fast. I read somewhere
   that in terms of compilation speed/type system features ratio, it is probably best in class. I agree with that! 
   Think of the OCaml compiler being like the Golang compiler in speed but delivering so many more features!
-* A very nice and consistent traditional class/object system in case you want that. "Objects/Classes done well". Newer anchor OCaml libraries like Eio  use objects/classes quite extensively. Sadly things like ppxlib (for metaprogramming in OCaml) don't work with objects/classes at all
+* A very nice and consistent traditional class/object system in case you want that. "Objects/Classes done well". Newer anchor OCaml libraries like Eio  use objects/classes quite extensively
 * Predictable, simple execution model
 * Simple enough FFI. Building bindings with C libraries is nowhere as simple as Rust's bindgen but there are things like 
   [ppx_cstubs](https://github.com/fdopen/ppx_cstubs) which makes things very simple. Please note that it is simply
