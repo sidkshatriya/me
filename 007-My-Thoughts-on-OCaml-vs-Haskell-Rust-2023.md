@@ -165,7 +165,7 @@ standard library can be improved, imperfect methods can be deprecated and new on
 
 Yes, OCaml does have a funny syntax. You have `int list` rather and `list int` and so forth. In that respect OCaml is 
 similar to C/C++. In C/C++ we have `int*` rather than `*int` (which would be more like Golang, Rust, Haskell). 
-Once you guess used to it, this falls into the background. The surface syntax is just such a small aspect of the large part
+Once you get used to it, this falls into the background. The surface syntax is just such a small aspect of the large part
 of the art of the programming. Then we have inconsistencies in the way major control structures are written in OCaml. All
 these feel small to me and have faded into the background ever since I spent just a few hours with OCaml. I just keep
 an OCaml syntax sheet near me if I'm coming back to OCaml after a few months.
