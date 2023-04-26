@@ -219,10 +219,10 @@ is long delayed, but there is hope that the next major version of Haskell will h
 OCaml gives you a nice backtrace if you set the environment variable as `OCAMLRUNPARAM=b`. You need to compile your
 program with debugging information `-g`.
 
-# OCaml Tooling in 2023
+# OCaml Tooling and the OCaml Language Server in 2023
 
 Much ink has been spilt on the inadequacies of OCaml tooling. I won't waste my time rehashing arguments in favor and
-against `dune`, `opam` etc. dune & opam have come a long way in the last few years. If you've been burned in the past, it's
+against `dune`, `opam` etc. `dune` & `opam` have come a long way in the last few years. If you've been burned in the past, it's
 time to try again and see if OCaml tooling rises to your expectations. That's all I will say.
 
 I will say that in 2023 dune's S-expression DSL is still not very pleasant (and difficult to remember) but **dune is 
@@ -244,7 +244,7 @@ BTW you don't need to do anything special with `rust-analyzer` to get goto-defin
 One major weakness of the OCaml LSP (or you could say the compiler) it that it does not support searching for references
 across a full code base (you can only see references within a single file which is basically useless). So it is currently not possible to point to a function and search where it is used in the whole codebase.
 This is critical especially for OCaml because of the open-world assumption I spoke of above. Because membership of something
-is not opt-in, you need to look at the existing codebase to see various usages of functions, modules, functor invocations etc. This is something that hopefully
+is not opt-in, you need to look at the existing codebase to see various usages of functions, modules, functor invocations etc. This is something that hopefully will
 change for the better. See the occurences [PR](https://github.com/ocaml/ocaml/pull/12142) that deals with this problem 
 and will hopefully be complete and merged at some point soon.
 
