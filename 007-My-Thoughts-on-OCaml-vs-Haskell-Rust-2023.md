@@ -113,8 +113,7 @@ many of them. This is surely going to be a tall order because I've been quite cr
 # The sheer practicality of OCaml
 
 I own and have read a lot of Haskell books. I've also loved reading some Haskell papers and
-many blog posts over the years. My undergraduate background is in computer science and I actually love hard-core PL/Computer Science-*y* stuff.
-Haskell has been a major influence on me.
+many blog posts over the years. My undergrad degree is in Computer Science and I actually love hard-core PL/Computer Science-*y* stuff. Haskell has been a major influence on me.
 
 I could *read* a piece of Haskell and my heart dances with joy. These moments of joy are not as common with OCaml. 
 
