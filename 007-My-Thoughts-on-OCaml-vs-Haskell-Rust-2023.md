@@ -202,7 +202,7 @@ put some effort into this.
 
 Here is one issue that I've seen in OCaml -- because it is a small
 community we often see the carcases of many a promising project. Either the programmers moved onto other things or the
-Ph.D./Project was over and that promising line of work was abandoned. In Haskell I also see that but there is a higher rate of "completion" of features. No doubt this is unscientific assessement based of "feel".
+Ph.D./Project was over and that promising line of work was abandoned. In Haskell I also see that but there is a higher rate of "completion" of features. No doubt this is unscientific assessement based on "feel".
 Haskellers seem to want to put a nail on things more than OCaml. This could just be because there are more people in the Haskell community or could
 reflect an attitude in the community of getting things done "fully" and "correctly". I don't know -- this is something the OCaml 
 could learn from Haskell more -- completing things. In Rust, simply because the language has become so big/mainstream that everything already 
@@ -296,8 +296,8 @@ OCaml is only improving. However, in the meanwhile there is a lot that is right 
 drawing me back and is worth recalling:
 
 * The type system while nowhere near Haskell has a LOT to offer. It mostly fits in my head unlike Haskell
-* The language has arguably better fundamental choices: no `undefined`, simpler exceptions (Haskell exceptions are vexing!)
-* A simpler runtime: The haskell runtime has a ton of C-code!
+* The language has arguably better fundamental choices: no `undefined`, simpler exceptions (Haskell exceptions are vexing!), reliable backtraces
+* A simple enough runtime (compared to, say, Haskell)
 * Lack of laziness (controversial opinion but this is my preference!)
 * The compiler/type checker is super-fast and everything just feels responsive, lightweight and fast. I read somewhere
   that in terms of compilation speed/type system features ratio, it is probably best in class. I agree with that! 
