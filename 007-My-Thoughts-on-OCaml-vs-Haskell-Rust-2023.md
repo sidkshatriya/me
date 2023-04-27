@@ -280,8 +280,8 @@ It bears repeating that the `Eio` library does not have a monopoly on effects an
 And there is more to come. In a future OCaml version, effects will be tracked in the OCaml type system. Effects are
 currently untyped. If you're interested in this area, Haskell 9.6 onwards has support for delimited continuations. 
 See [here](https://github.com/ghc-proposals/ghc-proposals/blob/master/proposals/0313-delimited-continuation-primops.rst).
-It provides support for effects/effect handlers like OCaml 5.0 does. It would be interesting to compare and contrast
-but I don't know enough about it to comment further.
+It provides support for effects/effect handlers like OCaml 5.0 does. Could these primops be used to build user level
+concurrency like Eio? This comment seems to think [not](https://discuss.ocaml.org/t/my-thoughts-on-ocaml-vs-haskell-rust-in-2023/12027/16). It would be interesting to compare and contrast in detail but I don't know enough about it to comment further. 
 
 # TL;DR Why should I use OCaml then?
 
