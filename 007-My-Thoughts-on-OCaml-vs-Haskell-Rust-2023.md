@@ -278,8 +278,7 @@ And there is more to come. In a future OCaml version, effects will be tracked in
 currently untyped. If you're interested in this area, Haskell 9.6 onwards has support for delimited continuations. 
 See [here](https://github.com/ghc-proposals/ghc-proposals/blob/master/proposals/0313-delimited-continuation-primops.rst).
 It provides support for effects/effect handlers like OCaml 5.0 does. It would be interesting to compare and contrast
-but I don't know enough about it to comment further. My impression you could use it to build something like Eio in Haskell
-but things are not so far along as in OCaml.
+but I don't know enough about it to comment further. My impression is you could use it to build something like Eio in Haskell.
 
 # TL;DR Why should I use OCaml then?
 
@@ -287,8 +286,7 @@ but things are not so far along as in OCaml.
 > 
 > Bjarne Stroustrup
 
-OCaml appears in large number of places. The amount of OCaml being written is ever increasing. The complaints about OCaml, to me, say
-that people are passionate about OCaml and want it to succeed. 
+OCaml appears in large number of important, mission critical places. The amount of OCaml being written is ever increasing. The complaints about OCaml, to me, say that people are passionate about OCaml and want it to grow further. 
 
 OCaml is only improving. However, in the meanwhile there is a lot that is right about OCaml that keeps
 drawing me back and is worth recalling:
