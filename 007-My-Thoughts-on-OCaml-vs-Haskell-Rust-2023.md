@@ -99,7 +99,7 @@ In OCaml I have to rely on fragile code/function naming conventions or peer deep
 Rust and Haskell library code, because of the common vocabulary established by popularly used traits/type classes
 can look quite uniform. On the other hand, each OCaml library's code structure can be quite custom. You may actually have to
 read the code more thoroughly to get a feel of everything. In Rust/Haskell I can often just look at the
-cargo/haddock documentation to get by. OCaml does have Odoc which helps a lot but the overall shape of the OCaml 
+cargo/haddock documentation to get by. OCaml does have Odoc which helps a lot but the overall shape of that OCaml 
 programming language does not lend itself to learning too many high level things about a library by exploiting this "common vocabulary"
 that ad-hoc polymorphism promotes. Note that OCaml *does* achieve "common vocabulary" in various other ways but it is just not
 as rich as that of Haskell/Rust.
