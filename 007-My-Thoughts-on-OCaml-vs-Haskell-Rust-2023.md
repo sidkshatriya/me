@@ -286,7 +286,7 @@ but I don't know enough about it to comment further. My impression is you could 
 > 
 > Bjarne Stroustrup
 
-OCaml appears in large number of important, mission critical places. The amount of OCaml being written is ever increasing. The complaints about OCaml, to me, say that people are passionate about OCaml and want it to grow further. 
+OCaml appears in large number of important, mission critical places. The amount of OCaml being written is ever increasing. The complaints about OCaml, to me, say that people are passionate about OCaml and want it to succeed. 
 
 OCaml is only improving. However, in the meanwhile there is a lot that is right about OCaml that keeps
 drawing me back and is worth recalling:
