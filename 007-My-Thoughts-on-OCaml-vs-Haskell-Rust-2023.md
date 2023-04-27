@@ -29,14 +29,16 @@ In this blog post I would like to document my experiences with OCaml as of 2023 
 with Haskell. I will also talk about Rust where I can.
 
 To me, the lack of a GC is the main differentiator between Haskell/OCaml and Rust. 
-In general, I would say that if you _don't_ need the convenience of garbage collection then
+In general, I would say that if you _don't_ need the convenience of garbage collection (GC) then
 just skip OCaml and Haskell and just use Rust. You might want the convenience of a GC when your application _does not_ 
 have very high performance requirements and/or when the shape of your data structures in memory can be complex. Examples of complex data
 structures would be self-referential data structures, data structures in which there are bidirectional pointer
 links, recursive data structures etc. Another area where I would strongly consider using OCaml is in the async 
 space. I love Rust but I absolutely abhor the complexity it has spawned in the async space. Async Rust is 
 truly a beast and I don't mean this positively. I will try to avoid Rust in those situations. Rust with vanilla system
-threads is extremely pleasant and wonderful. However, async Rust (Tokio and friends) is still a no-no for me. Another area where you might
+threads is extremely pleasant and wonderful. However, async Rust (Tokio and friends) is still a no-no for me. 
+
+Another area where you might
 _not_ want to use Rust is if your program provides some sort of simple interpreted language or DSL. With OCaml (and Haskell)
 that DSL/interpreted language would get OCaml/Haskell's Garbage collection "for free." Now any sufficiently complex interpreted
 language has the tendency of creating cycles in data structures. And if you wrote any interpreter in Rust you would need to
@@ -55,12 +57,11 @@ like to compare themselves with Haskell.
 
 Before I get deep into the guts of this blogpost -- for those who are wondering -- what about Scala? Or F#? 
 While I find Scala quite featureful, it is built on the JVM.
-Because of this there are some compromises that have entered the design of Scala: Generally speaking, `Null` can appear
-where an `Object` can and this is deal killer for me. `Null` issues are more of a problem with Java packages I understand,
+Because of this there are some compromises that have entered the design of Scala: Generally speaking, `null` can appear
+where an `Object` can and this is deal killer for me. `null` issues are more of a problem with Java packages I understand,
 but given that you can end up using lot of popular Java packages with Scala this is still a concern. Scala's frankenstein
-object-functional nature is also too complex for my personal taste. People love F# too but the problem of `Null` exists on
-the CLR too. `Null`/`Nil` are truly "billion-dollar" [mistakes](https://en.wikipedia.org/wiki/Tony_Hoare). In that respect OCaml/Rust are ideal (Haskell has issues
-with `undefined` which does not make it totally "good" in this department). 
+object-functional nature is also too complex for my personal taste. People love F# too but the problem of `null` exists on
+the CLR too. `null`/`nil` are truly "billion-dollar" [mistakes](https://en.wikipedia.org/wiki/Tony_Hoare). In that respect OCaml/Rust are ideal (Haskell has issues with `undefined` which does not make it totally "good" in this department). 
 
 Finally, there are just too many layers between me and the machine on the JVM/CLR for my personal taste. 
 Haskell/OCaml/Rust feel more grokkable to me.
@@ -76,10 +77,9 @@ Lack of ad-hoc polymorphism is truly OCaml's biggest weakness. For someone who l
 there is no other way to put it. It is a pity that Haskell's class/instance and Rust trait/implements have
 no real counterparts in OCaml. When you have a data structure in any language, you would like to know
 what "operations" that data structure supports. Yes, OCaml does have functors, modules and module signatures. They can 
-achieve the same outcome but suffer from one major problem: they have an open world assumption. In Haskell/Rust
-a data structure *says* that it implements a particular trait/class. It is opt-in. But in OCaml any module that satisfies a
-signature required by a functor will suffice. This hurts documentation. In Rust I can see cargo
-documentation for a library that I've not written, and at a glance see what traits a data structure implements. 
+achieve similar things but suffer from one major problem: they have an open world assumption. In Rust
+a data structure *says* that it implements a particular trait. In Haskell a data structure *says* it is an instance of a class. 
+It is opt-in. But in OCaml any module that satisfies a signature required by a functor will suffice. This hurts documentation. In Rust I can see cargo documentation for a library that I've not written, and at a glance see what traits a data structure implements. 
 Same with Haskell. In OCaml I have to `grep` for things like `.Make` to see
 what functors have been instantiated or look at massive module signatures to see what operations are supported.
 (Note that `.Make` is only a convention so this whole process is unsatisfying). A good (but imperfect) 
@@ -90,32 +90,30 @@ satisfy which interfaces in a more direct way!
 ### Ad-hoc polymorphism promotes interoperability, establishes common standards/common vocabulary
 
 One thing that I'm struck by is how ad-hoc polymorphism promotes code readability and common standards across the
-language ecosystem. There are some famous Haskell type classes like Monad, Monoid, Functor, Applicative etc. In Rust
+language ecosystem. There are some commonly used Haskell type classes like Monad, Monoid, Functor, Applicative etc. In Rust
 we have type classes for iterators, errors, type conversions, data structure pretty printing
 etc. These type classes establish a common "vocabulary". Once I see a Monad in Haskell, or a `AsRef<T>`, or a `From<T>`
-etc. in Rust I instantly know exactly what operations I have available to me and generally what to expect. 
+etc. in Rust I instantly know exactly what operations are available to me and generally what kind of code to expect. 
 In OCaml I have to rely on fragile code/function naming conventions or peer deeply at the module signature/module implementation.
-It is just not as satisfying.
 
 Rust and Haskell library code, because of the common vocabulary established by popularly used traits/type classes
-can look quite uniform. OTOH each OCaml library's code structure can be quite custom. You actually have to
+can look quite uniform. On the other hand, each OCaml library's code structure can be quite custom. You may actually have to
 read the code more thoroughly to get a feel of everything. In Rust/Haskell I can often just look at the
-cargo/haddock documentation. OCaml does have Odoc which helps a lot but the overall shape of the OCaml 
-language does not lend itself to learning too many high level things about a library by exploiting this "common vocabulary"
+cargo/haddock documentation to get by. OCaml does have Odoc which helps a lot but the overall shape of the OCaml 
+programming language does not lend itself to learning too many high level things about a library by exploiting this "common vocabulary"
 that ad-hoc polymorphism promotes. Note that OCaml *does* achieve "common vocabulary" in various other ways but it is just not
 as rich as that of Haskell/Rust.
 
 ### Is this lack of ad-hoc polymorphism fatal to OCaml?
 
 I think not. If was so, I would not use OCaml. OCaml has so many other strengths and I hope to do justice to
-many of them. This is surely going to be a tall order because I've been quite critical of OCaml so far.
+many of them.
 
 # The sheer practicality of OCaml
 
 I own and have read a lot of Haskell books. I've also loved reading some Haskell papers and
-many blog posts over the years. My undergrad degree is in Computer Science and I actually love hard-core PL/Computer Science-*y* stuff. Haskell has been a major influence on me.
-
-I could *read* a piece of Haskell and my heart dances with joy. These moments of joy are not as common with OCaml. 
+many blog posts over the years. I could *read* a piece of Haskell and my heart dances with joy. 
+These moments of joy are not as common with OCaml. 
 
 But then I just feel a bit exhausted with Haskell. Maybe this is just me. Writing Haskell
 with Monad transformers, worrying about the complexity of Haskell exceptions, errors, laziness etc. all seems overwhelming. 
@@ -258,21 +256,21 @@ Previously there was a "runtime lock" which essentially meant that only one syst
 (though multiple system threads could be executing FFI C-code parallely, if you so wished). In that respect OCaml
 resembled Python in some ways. Now OCaml is on par with Golang and Haskell runtimes.
 
-There is another benefit: OCaml 5.0 supports effects which to a first approximation are basically "resumable exceptions".
-Effects have been a very active area of research in type theory and runtime systems. Effects allow you to implement many
-common facilities like lightweight green threads, various kinds of monads etc. in a very succint way.
+There is another benefit: OCaml 5.0 supports Algebraic Effects which to a first approximation are basically "resumable exceptions".
+Algebraic Effects have been a very active area of research in type theory and runtime systems. Effects allow you to implement many
+common facilities like lightweight green threads, various kinds of monads etc. in a very succint, syntactically lightweight way. 
+To my understanding, OCaml is one of the very few widely used programming languages that is providing support for effects in its runtime in 2023.
 
 Using effects we have a new library called [Eio](https://github.com/ocaml-multicore/eio) in OCaml. It allows IO in OCaml to look like IO in Golang. We can perform
 a ordinarily blocking read call and the Eio will seamlessly pause the thread of execution and only
 resume when data is available without you having to explicitly ask for that. All this happens without ugly and explicit
 `await` calls or `>>=` invocations.
 
-In OCaml 4.14 and below, this was done in a heavy-weight way by using libraries like Lwt or Async. With effects green
+In OCaml 4.14 and below, async IO was done in a heavy-weight way monadic style by using libraries like Lwt or Async. With effects green
 threads become easy. The beauty is that all this is accomplished by a library! The Ocaml runtime just provides the 
-base functionality of effects (and OCaml domains) and Eio is able to build green threads using io uring on linux (or posix mechanisms like
-`poll` when `io_uring` is not available).
+base functionality of Algebraic Effects and OCaml domains (i.e. the ability to parallely run OCaml code on different CPU cores) and Eio is able to build green threads using io uring on linux (or posix mechanisms like `poll` when `io_uring` is not available).
 
-In some ways, the OCaml runtime has become more advanced than the Golang runtime (and maybe the Haskell runtime). In order to provide new 
+In some ways, the OCaml runtime has arguably become more advanced than the Golang runtime (and maybe the Haskell runtime). In order to provide new 
 capabilities in the Haskell runtime you will (probably) need to write hard to maintain and fragile C-code. In OCaml, you
 can, in most cases just use OCaml to enhance your custom "runtime". BTW the `Eio` library does not have a monopoly on effects and there can be other libraries that provide other approaches and benefits by using the same effect primitives.
 
@@ -281,7 +279,7 @@ currently untyped. If you're interested in this area, Haskell 9.6 onwards has su
 See [here](https://github.com/ghc-proposals/ghc-proposals/blob/master/proposals/0313-delimited-continuation-primops.rst).
 It provides support for effects/effect handlers like OCaml 5.0 does. It would be interesting to compare and contrast
 but I don't know enough about it to comment further. My impression you could use it to build something like Eio in Haskell
-but things are definitely not so far along as in OCaml.
+but things are not so far along as in OCaml.
 
 # TL;DR Why should I use OCaml then?
 
@@ -295,18 +293,21 @@ that people are passionate about OCaml and want it to succeed.
 OCaml is only improving. However, in the meanwhile there is a lot that is right about OCaml that keeps
 drawing me back and is worth recalling:
 
-* The type system while nowhere near Haskell has a LOT to offer. It mostly fits in my head unlike Haskell
+* The type system while less impressive than Haskell's has a LOT to offer. It mostly fits in my head unlike Haskell
 * The language has arguably better fundamental choices: no `undefined`, simpler exceptions (Haskell exceptions are vexing!), reliable backtraces
-* A simple enough runtime (compared to, say, Haskell)
-* Lack of laziness (controversial opinion but this is my preference!)
+* A simple enough runtime (compared to, say, Haskell). Much much simpler than JVM, CLR.
+* Not lazy by default (controversial opinion but this is my preference!)
 * The compiler/type checker is super-fast and everything just feels responsive, lightweight and fast. I read somewhere
   that in terms of compilation speed/type system features ratio, it is probably best in class. I agree with that! 
   Think of the OCaml compiler being like the Golang compiler in speed but delivering so many more features!
-* A very nice and consistent traditional class/object system in case you want that. "Objects/Classes done well". Newer anchor OCaml libraries like Eio  use objects/classes quite extensively
+* A very nice and consistent traditional class/object system in case you want that. "Objects/Classes done well". Newer anchor OCaml libraries like Eio use objects/classes quite extensively
 * Predictable, simple execution model
 * Simple enough FFI. Building bindings with C libraries is nowhere as simple as Rust's bindgen but there are things like 
   [ppx_cstubs](https://github.com/fdopen/ppx_cstubs) which makes things very simple. Please note that it is simply
-  not possible to be as good as Rust's bindgen because there is GC in OCaml which makes FFI a bit more complex.
+  not possible to be as good as Rust's bindgen because there is GC in OCaml which makes FFI a bit more complex
+* Algebraic Effects (untyped for now, probably typed in a future OCaml version)
+* Proper tail calls
+* Great performance with garbage collection
 
 OCaml can feel like a scripting language sometimes though everything is actually very strongly typed! There are many
 places where OCaml could profitably replace Python. You could build mostly everything in OCaml and get great performance
@@ -314,4 +315,3 @@ and only FFI out when you absolutely need to. With Python, you would need to oft
 if you want a high performance library.
 
 Please try out OCaml. You might be pleasantly surprised.
-
