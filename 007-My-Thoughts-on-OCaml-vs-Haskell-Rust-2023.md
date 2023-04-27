@@ -134,9 +134,9 @@ I am definitely not that expert (and do I even want to be?). In general as a hum
 all patterns and situations where laziness creates a problem in advance. The debugging will have to happen during runtime 
 and I don't want to do that.
 
-In general, I have been frustrated with the strange dichotomy of the inordinate amount of time Haskellers spend
-encoding invariants by using the excellent Haskell type system so that they don't get runtime errors. But then they
-strangely tolerate the possibility of space leaks that might occur during the same runtime. I initiated a discussion
+I have been frustrated with the strange dichotomy of the inordinate amount of time Haskellers spend
+encoding invariants by using the excellent Haskell type system so that they don't get runtime errors; but then they
+strangely tolerate the possibility of space leaks that might occur during the same runtime! I initiated a discussion
 on reddit on [How can Haskell Programmers tolerate space leaks](https://www.reddit.com/r/haskell/comments/pvosen/how_can_haskell_programmers_tolerate_space_leaks/)
 and in true Haskell community style got a lot (positive) participation and interesting/useful comments.
 
@@ -180,7 +180,7 @@ debuggable by a classic debugger in the style of a `gdb`. Now the Haskell repl h
 Since Haskell is a lazy language, the very act of observing a variable value 
 in a Haskell debugger means that you might evaluate a thunk that would ordinarily not be
 evaluated at that point of the program. Eagerly evaluated languages like Rust, C/C++, OCaml etc. don't suffer from this problem.
-So if you want to see what is in a variable you will disturb the program. (A bit like Quantum Mechanics but I digress :-) ). 
+So if you want to see what is in a variable you will disturb the program (A bit like Quantum Mechanics where observing a variable affects the system!). 
 Now, I love debuggers and to me this is another
 major issue for me with Haskell. You *could* do sophisticated things like evaluate the Haskell variable in rr "diversion session" that will
 essentially (unix) fork the program and not disturb the main program (BTW this would be an excellent project to do for Haskell). 
@@ -200,7 +200,7 @@ put some effort into this.
 
 Here is one issue that I've seen in OCaml -- because it is a small
 community we often see the carcases of many a promising project. Either the programmers moved onto other things or the
-Ph.D./Project was over and that promising line of work was abandoned. In Haskell I also see that but there is a higher rate of "completion" of features. No doubt this is unscientific assessement based on "feel".
+Ph.D./project was over and that promising line of work was abandoned. In Haskell I also see that but there is a higher rate of "completion" of features. No doubt this is unscientific assessement based on "feel".
 Haskellers seem to want to put a nail on things more than OCaml. This could just be because there are more people in the Haskell community or could
 reflect an attitude in the community of getting things done "fully" and "correctly". I don't know -- this is something the OCaml 
 could learn from Haskell more -- completing things. In Rust, simply because the language has become so big/mainstream that everything already 
