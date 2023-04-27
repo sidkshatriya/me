@@ -270,15 +270,18 @@ In OCaml 4.14 and below, async IO was done in a heavy-weight way monadic style b
 threads become easy. The beauty is that all this is accomplished by a library! The Ocaml runtime just provides the 
 base functionality of Algebraic Effects and OCaml domains (i.e. the ability to parallely run OCaml code on different CPU cores) and Eio is able to build green threads using io uring on linux (or posix mechanisms like `poll` when `io_uring` is not available).
 
-In some ways, the OCaml runtime has arguably become more advanced than the Golang runtime (and maybe the Haskell runtime). In order to provide new 
-capabilities in the Haskell runtime you will (probably) need to write hard to maintain and fragile C-code. In OCaml, you
-can, in most cases just use OCaml to enhance your custom "runtime". BTW the `Eio` library does not have a monopoly on effects and there can be other libraries that provide other approaches and benefits by using the same effect primitives.
+The Haskell runtime is an impressive piece of engineering and has been doing things for years for which OCaml 5.0 has just recently acquired 
+capabilities for. However, there is a lot of C-code in the Haskell runtime and upgrades/enhancements necessarily need to happen via tricky and fragile C. Here OCaml has
+a small advantage now: Its primitives around algebraic effects are quite generic and powerful. For example, Eio allows you to multiplex green threads on multiple cores and uses io_uring as a backend. There is small amount of FFI C code that allows Eio to use io_uring but the rest of the code to build
+this green threading system is all in OCaml. Tomorrow if we want to enhance Eio to change how the green threads are scheduled or provide additional features, most likely we can do that in OCaml and not in C. This gives the OCaml runtime tremendous flexibility and power and provides a lot of headroom for enhancement.
+
+It bears repeating that the `Eio` library does not have a monopoly on effects and there can be other libraries that provide other approaches and benefits by using the same effect primitives.
 
 And there is more to come. In a future OCaml version, effects will be tracked in the OCaml type system. Effects are
 currently untyped. If you're interested in this area, Haskell 9.6 onwards has support for delimited continuations. 
 See [here](https://github.com/ghc-proposals/ghc-proposals/blob/master/proposals/0313-delimited-continuation-primops.rst).
 It provides support for effects/effect handlers like OCaml 5.0 does. It would be interesting to compare and contrast
-but I don't know enough about it to comment further. My impression is you could use it to build something like Eio in Haskell.
+but I don't know enough about it to comment further.
 
 # TL;DR Why should I use OCaml then?
 
