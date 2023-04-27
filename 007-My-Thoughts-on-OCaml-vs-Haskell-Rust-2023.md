@@ -320,4 +320,4 @@ Please try out OCaml. You might be pleasantly surprised.
 ---
 This blog past can be discussed at https://discuss.ocaml.org/t/my-thoughts-on-ocaml-vs-haskell-rust-in-2023/12027
 
-Thanks to everyone who added helpful corrections, feedback, clarifications, comments on https://discuss.ocaml.org. I have tried to incorporate *some* of these back into the article. Any mistakes of course remain mine. Thanks to octachron, lukstafi, kayceesrk, gasche and others. I'm not implying that they agree with or endorse or have validated this blog post -- my only intention is to thank them for their feedback/comments.
+Thanks to everyone who added helpful corrections, feedback, clarifications, comments on https://discuss.ocaml.org. I have tried to incorporate *some* of these back into the article. Any mistakes of course remain mine. Thanks to octachron, lukstafi, kayceesrk, gasche and others. I'm not implying that they necessarily agree with or endorse or have validated this blog post -- my only intention is to thank them for their feedback/comments.
