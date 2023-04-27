@@ -141,9 +141,9 @@ on reddit on [How can Haskell Programmers tolerate space leaks](https://www.redd
 and in true Haskell community style got a lot (positive) participation and interesting/useful comments.
 
 Just like I feel that the lack of ad-hoc polymorphism is OCaml's achilles heel. Laziness could be Haskell's. Laziness
-no-doubt helps you *write* beautiful programs. But laziness certainly doesn't help you *run* beautiful programs. One
-common feedback in the complaints I've made is that laziness is not a problem in *practice*. I must confess I've not written
-enough big, long-running Haskell programs to disagree with this statement.
+no-doubt helps you *write* beautiful programs. But laziness certainly doesn't help you *run* beautiful programs (Yes, there is a class of
+programs that run faster precisely due to laziness but the overall balance to me is net-negative due to all the developer time that must be spent observing runtime behavior of sufficiently large/important Haskell programs). A common feedback in the complaints I've made is that laziness is not a problem in *practice*. 
+I must confess I've not written enough big, long-running Haskell programs to disagree with this statement.
 
 I must point out here that Purescript is an excellent example of a Haskell-like language. It has many of the syntactic benefits 
 of Haskell but it is strict by default. With laziness gone, Purescript cannot possibly be as beautiful as Haskell but this could represent
