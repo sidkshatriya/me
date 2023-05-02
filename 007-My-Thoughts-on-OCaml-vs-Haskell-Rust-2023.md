@@ -69,11 +69,11 @@ Haskell/OCaml/Rust feel more grokkable to me.
 I've divided the rest of the article in more digestible headings in which I pick a topic and talk about strengths/weaknesses
 of OCaml and Haskell (and sometimes Rust) as of 2023.
 
-## The lack of ad-hoc polymorphism in OCaml
+## The lack of type classes in OCaml
 
 Here I generally agree with what osa1 has written in his blogpost I've linked above.
 
-Lack of ad-hoc polymorphism is truly OCaml's biggest weakness. For someone who likes and sometimes even feels "love" for OCaml
+Lack of type classes/traits is truly OCaml's biggest weakness. For someone who likes and sometimes even feels "love" for OCaml
 there is no other way to put it. It is a pity that Haskell's class/instance and Rust trait/implements have
 no real counterparts in OCaml. When you have a data structure in any language, you would like to know
 what "operations" that data structure supports. Yes, OCaml does have functors, modules and module signatures. They can 
@@ -87,9 +87,9 @@ analogy of what we have in OCaml is "duck typing" that Golang also has. In Golan
 methods as an interface satisfies that interface. But then it would be useful to know which data structures
 satisfy which interfaces in a more direct way!
 
-### Ad-hoc polymorphism promotes interoperability, establishes common standards/common vocabulary
+### Type classes promote interoperability, establish common standards/common vocabulary
 
-One thing that I'm struck by is how ad-hoc polymorphism promotes code readability and common standards across the
+One thing that I'm struck by is type classes promote code readability and common standards across the
 language ecosystem. There are some commonly used Haskell type classes like Monad, Monoid, Functor, Applicative etc. In Rust
 we have type classes for iterators, errors, type conversions, data structure pretty printing
 etc. These type classes establish a common "vocabulary". Once I see a Monad in Haskell, or a `AsRef<T>`, or a `From<T>`
@@ -101,10 +101,10 @@ can look quite uniform. On the other hand, each OCaml library's code structure c
 read the code more thoroughly to get a feel of everything. In Rust/Haskell I can often just look at the
 cargo/haddock documentation to get by. OCaml does have Odoc which helps a lot but the overall shape of that OCaml 
 programming language does not lend itself to learning too many high level things about a library by exploiting this "common vocabulary"
-that ad-hoc polymorphism promotes. Note that OCaml *does* achieve "common vocabulary" in various other ways but it is just not
+that type classes promote. Note that OCaml *does* achieve "common vocabulary" in various other ways but it is just not
 as rich as that of Haskell/Rust.
 
-### Is this lack of ad-hoc polymorphism fatal to OCaml?
+### Is this lack of type classes fatal to OCaml?
 
 I think not. If was so, I would not use OCaml. OCaml has so many other strengths and I hope to do justice to
 many of them.
