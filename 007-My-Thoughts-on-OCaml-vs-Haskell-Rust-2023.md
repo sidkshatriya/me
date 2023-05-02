@@ -140,7 +140,7 @@ strangely tolerate the possibility of space leaks that might occur during the sa
 on reddit on [How can Haskell Programmers tolerate space leaks](https://www.reddit.com/r/haskell/comments/pvosen/how_can_haskell_programmers_tolerate_space_leaks/)
 and in true Haskell community style got a lot (positive) participation and interesting/useful comments.
 
-Just like I feel that the lack of ad-hoc polymorphism is OCaml's achilles heel, laziness could be Haskell's. Laziness
+Just like I feel that the lack of type classes is OCaml's achilles heel, laziness could be Haskell's. Laziness
 no-doubt helps you *write* beautiful programs. But laziness certainly doesn't help you *run* beautiful programs (Yes, there is a class of
 programs that run faster precisely due to laziness but the overall balance to me is net-negative due to all the developer time that must be spent observing runtime behavior of sufficiently large/important Haskell programs). A common feedback in the complaints I've made is that laziness is not a problem in *practice*. 
 I must confess I've not written enough big, long-running Haskell programs to disagree with this statement.
@@ -156,7 +156,7 @@ on a day-to-day level the inconsistencies and "infelicities" (in Haskell verbiag
 affect me that much. Maybe I'm not a compiler engineer working on something deep but the inconsistencies in the OCaml
 standard library never really have affected me. Sorry for sounding like a simpleton but that is just the way I feel.
 What people have forgotten is that the pace of development in OCaml has really speeded up. Some papercuts have been removed
-in recent years. The cool thing about this is that this is not a big problem like lack of ad-hoc polymorphism. The
+in recent years. The cool thing about this is that this is not a big problem like lack of type classes. The
 standard library can be improved, imperfect methods can be deprecated and new ones added. I wouldn't worry about this if I'm picking up OCaml today.
 
 # Funny parsing issues / syntax
