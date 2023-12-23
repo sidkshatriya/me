@@ -62,7 +62,7 @@ However, does that mean that like LLVM we are forever stuck with C/C++ for a fou
 
 This port has been a long and lonely journey so far but I think `rd` has reached a stage that end-users can use it. Hopefully now that this project has reached this milestone, other developers can play around with it too and give feedback and contribute.
 
-I have a few dreams and plans for `rd`. My hope is that in the future it can become a laboratory for some exiting features in debugging. But this will only come to fruition once `rd` becomes a reliable and much loved piece of software that `rr` already is.
+I have a few dreams and plans for `rd`. My hope is that in the future it can become a laboratory for some exciting features in debugging. But this will only come to fruition once `rd` becomes a reliable and much loved piece of software that `rr` already is.
 
 Please play around with `rd` and let me know if things worked out for you. This is alpha level software, so I apologise in advance if things don't work as expected!
 
