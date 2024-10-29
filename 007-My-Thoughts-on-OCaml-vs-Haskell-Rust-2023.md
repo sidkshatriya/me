@@ -124,7 +124,7 @@ debilitating. I totally buy and appreciate how laziness increases language expre
 or inclination to look at memory usage graphs and squash laziness related memory leaks that can be quite subtle. Removing
 laziness is not as trivial as slapping on a `!` or adding a GHC language extension. Here is an interesting blog post
 [Strict vs Lazy](https://www.tweag.io/blog/2022-05-12-strict-vs-lazy/) that goes deeper into the issue. 
-[Make invalid laziness unresentable](http://h2.jaguarpaw.co.uk/posts/make-invalid-laziness-unrepresentable) is another gem.
+[Make invalid laziness unrepresentable](http://h2.jaguarpaw.co.uk/posts/make-invalid-laziness-unrepresentable) is another gem.
 Sometimes to prevent laziness from becoming a problem you must use a (nevertheless beautifully written) library like [foldl](https://github.com/Gabriella439/foldl).
 Still feels excessive.
 
