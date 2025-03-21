@@ -172,8 +172,9 @@ BTW the best resource to understand how record and replay systems
 in general and `rr` in particular works is to read the arXiv paper
 [Engineering Record And Replay For Deployability: Extended Technical
 Report](https://arxiv.org/abs/1705.05937). Note that the report was
-written in 2017 and even though small number of `rr` internal details
-changed, the core concepts behind `rr` remain the same.  In my opinion
+written in 2017 and even though there has been a lot of changes to the
+code (more robustness, lots of bug fixes, more features, aarch64 support etc.) 
+the core concepts behind `rr` remain the same.  In my opinion
 it is still the best resource to learn about `rr` at a slightly
 deeper level. You should brush up on topics like Linux system calls,
 signals, ptrace etc. before diving into the paper (there are a lot
