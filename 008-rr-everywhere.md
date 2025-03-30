@@ -20,6 +20,12 @@ I call this variant, _Software Counters mode_ `rr`. Record and
 Replay systems like `rr` deserve to be able to run everywhere and this
 is my attempt at making this possible !
 
+**Running rr record/replay without access to CPU HW performance
+counters is accomplished using lightweight dynamic (and static)
+instrumentation**. The _Software Counters mode_ rr
+[wiki](https://github.com/sidkshatriya/rr.soft/wiki) has more details
+in case you're curious about some more of the internals.
+
 To build, install and run _Software Counters mode_ rr please visit
 https://github.com/sidkshatriya/rr.soft
 
