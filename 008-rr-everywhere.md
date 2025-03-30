@@ -39,6 +39,10 @@ When you watch a YouTube video, there is the unspoken expectation
 that when you rewind or go forward an arbitrary number of seconds the
 video is exactly the same as it had been when it was recorded !
 
+[<img width="420" align="center" src="misc/gangnam_style.jpg" />](https://www.youtube.com/watch?v=9bZkp7q19f0)
+
+**_Once uploaded, the Gangnam Style video never changes !_**
+
 You don't see something new in the video that was never there ! The
 video and audio is exactly the same. In fact, if the video was
 slightly different when you replayed it again and again
