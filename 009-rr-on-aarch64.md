@@ -300,7 +300,7 @@ Number of vowels: 1
 
 Yup, it is exactly the same.
 
-## Seeing all the programs recorded via `rr ps`
+# Seeing all the programs recorded via `rr ps`
 
 One powerful feature of `rr` is that you can see all the programs that
 are present in the recording. This is always useful for debugging and
@@ -327,7 +327,7 @@ was the most recent recording you made, you can use `rr ps` or any other `rr`
 sub-command like `rr replay` without explicitly mentioning the recording
 name `bash-25`.
 
-### Let's see `rr ps` for a simple `gcc` compilation
+# Let's see `rr ps` for a simple `gcc` compilation
 
 To show the power of `rr ps` let's just record the compilation of `numvc`
 itself:
