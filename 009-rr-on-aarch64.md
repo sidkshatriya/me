@@ -39,8 +39,8 @@ bugs and rough edges -- please be aware of that if something does not
 work as expected for you.
 
 _Notation_: I mostly use the term `rr` generically. It would rapidly
-become annoying to keep having to type `rr` / `rr.soft` everywhere in
-this blog post.
+become annoying to keep having to type "`rr` / `rr.soft`" everywhere in
+this blog post. 
 
 ## Installing `rr.soft` on Linux
 
