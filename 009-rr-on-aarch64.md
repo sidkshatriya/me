@@ -268,7 +268,8 @@ because `rr` does not have access to CPU HW performance counter for our particul
 scenario (record/replay on a Linux VM on Apple Silicon macOS).
 
 Note that the `-W` flag will only work if you've built _Software Counters_ mode
-`rr` aka `rr.soft`. The upstream `rr` executable does not recognize this flag.
+`rr` aka [`rr.soft`](https://github.com/sidkshatriya/rr.soft). The upstream `rr`
+executable does not recognize this flag.
 
 This is what the output should look like:
 ```bash
