@@ -1126,7 +1126,7 @@ PID     PPID    EXIT    CMD
 19459   19412   0       wc --chars
 ```
 
-# Exploring the `wait4` syscall
+# The power of `rr dump`
 
 I'd like to explore the `wait()` that happens in `numvc`. This is when
 `numvc` waits for the `wc` process to finish. Let's explore that for fun.
@@ -1187,7 +1187,7 @@ the syscall table for aarch64 then you will be able to get a
 better understanding of what exactly is the meaning of the values in
 some of the registers.
 
-## Exploring the `wait4` syscall
+# Exploring the `wait4` syscall
 
 Let's explore the `wait4` syscalls in the recording by `grep`-ing for `wait`
 in `rr dump` output:
