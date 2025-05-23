@@ -41,7 +41,8 @@ work as expected for you.
 _Notation_: I mostly use the term `rr` generically. It would rapidly
 become annoying to keep having to type "`rr` / `rr.soft`" everywhere in
 this blog post. You should be able to tell easily from context 
-if something is specific to upstream `rr` or just to `rr.soft`.
+if something is specific to upstream `rr` or just to `rr.soft` or related
+to both.
 
 ## Installing `rr.soft` on Linux
 
