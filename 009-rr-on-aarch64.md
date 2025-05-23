@@ -265,7 +265,7 @@ $ rr record -W -- bash -c "echo -n 'lol CAT!' | ./numvc"
 ```
 
 The `-W` flag means we want to use software counters. This is necessary
-because `rr` does not have access to CPU HW performance counter for our particular
+because `rr` does not have access to CPU HW performance counters for our particular
 scenario (record/replay on a Linux VM on Apple Silicon macOS).
 
 Note that the `-W` flag will only work if you've built _Software Counters_ mode
