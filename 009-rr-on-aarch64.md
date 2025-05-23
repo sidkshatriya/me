@@ -257,7 +257,7 @@ Number of vowels: 1
 a vowel and the result should be 2 here. Something is wrong. Let's
 investigate.
 
-# Simple record/replay
+## Simple record/replay
 
 Let's first record the program:
 ```bash
@@ -300,7 +300,7 @@ Number of vowels: 1
 
 Yup, it is exactly the same.
 
-# Seeing all the programs recorded via `rr ps`
+## Seeing all the programs recorded via `rr ps`
 
 One powerful feature of `rr` is that you can see all the programs that
 are present in the recording. This is always useful for debugging and
@@ -327,7 +327,7 @@ was the most recent recording you made, you can use `rr ps` or any other `rr`
 sub-command like `rr replay` without explicitly mentioning the recording
 name `bash-25`.
 
-# Let's see `rr ps` for a simple `gcc` compilation
+## Let's see `rr ps` for a simple `gcc` compilation
 
 To show the power of `rr ps` let's just record the compilation of `numvc`
 itself:
@@ -381,7 +381,7 @@ You have:
 
 With this little detour done, lets get back to exploring `numvc`.
 
-# Let's explore the `numvc` program in the `bash-25` recording
+## Let's explore the `numvc` program in the `bash-25` recording
 
 The PID of `numvc` is `4893`. Let's debug with `rr` using `rr replay`:
 ```bash
@@ -704,7 +704,7 @@ your program/library you're debugging with `gdb` do you need debuginfo
 packages through your distro package manager or whether embedded in the
 executable itself).
 
-# Let's fix the bug: Why does `lol CAT!` have only 1 vowel?
+## Let's fix the bug: Why does `lol CAT!` have only 1 vowel?
 
 A reminder: There is a bug in the `numvc` program -- it doesn't count
 the number of vowels properly.
@@ -821,7 +821,7 @@ you get the correct number of vowels now for 'lol CAT!'.
 _Mission Accomplished_ as far as the bug goes. But let's explore a bit
 more about `rr`'s features now that we're here.
 
-# Let's dig into the `wc` program a bit
+## Let's dig into the `wc` program a bit
 
 We're going to use another secret weapon of `rr` in which we can see
 the event number of all outputs to stdout/stderr. The event numbers
@@ -1045,7 +1045,7 @@ Reassuringly, `wc` has counted 3 characters but **4 bytes** in
 `cät`. This is because `ä` is a special character that requires 2
 bytes to represent.
 
-# Static instrumentation of `numvc.c`
+## Static instrumentation of `numvc.c`
 
 How is `rr.soft` aka _Software Counters mode_ rr able to record/replay
 when upstream `rr` requires access to CPU HW performance counters?
@@ -1126,7 +1126,7 @@ PID     PPID    EXIT    CMD
 19459   19412   0       wc --chars
 ```
 
-# The power of `rr dump`
+## The power of `rr dump`
 
 I'd like to explore the `wait()` that happens in `numvc`. This is when
 `numvc` waits for the `wc` process to finish. Let's explore that for fun.
@@ -1187,7 +1187,7 @@ the syscall table for aarch64 then you will be able to get a
 better understanding of what exactly is the meaning of the values in
 some of the registers.
 
-# Exploring the `wait4` syscall
+## Exploring the `wait4` syscall
 
 Let's explore the `wait4` syscalls in the recording by `grep`-ing for `wait`
 in `rr dump` output:
@@ -1325,7 +1325,7 @@ Value returned is $1 = 0
 Reassuringly `wait_for_wc` returns 0 which means `wait4` happened without
 any errors. It was nice to zoom into `wait4` via `rr dump`.
 
-# Bonus: `ticks` in `rr` and `rr.soft`
+## Bonus: `ticks` in `rr` and `rr.soft`
 
 The event numbers are really a coarse way to know how far you are
 into the program.  As an approximation, they essentially mean how many
@@ -1383,7 +1383,7 @@ Woah ! The number of ticks went from 26953 -> 27444. This is because there
 would have been a lot of branches executed within the `printf` function.
 This makes sense.
 
-# Conclusion
+## Conclusion
 
 In this longish tutorial we've explored debugging a program with `rr`.
 Along the way we've seen some basic and advanced aspects of `rr` in
