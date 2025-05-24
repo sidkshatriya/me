@@ -2,7 +2,7 @@ _23 May 2025_
 
 ### [Other writings](README.md)
 
-# Record/Replay in a VM on macOS: A tutorial
+# Time Travel Debugging Tutorial 
 
 _The topic of this blog post is to teach you how to record/replay
 and debug a program using `rr.soft` through a small example program
