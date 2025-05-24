@@ -20,7 +20,7 @@ _As this is a personal blog, I don't accept any Pull Requests to it currently. I
 - [17 Aug 2021 - Dealing with GitHub Jealously](006-Dealing-with-GitHub-Jealously.md)
 - [26 April 2023 - My thoughts on Ocaml vs Haskell/Rust in 2023](007-My-Thoughts-on-OCaml-vs-Haskell-Rust-2023.md)
 - [21 March 2025 - Bringing Record and Replay everywhere](008-rr-everywhere.md)
-- [23 May 2025 - Time Travel Debugging Tutorial](009-rr-on-aarch64.md)
+- [23 May 2025 - Record/Replay Debugging Tutorial](009-rr-on-aarch64.md)
 
 ## Technical Articles
 - [How the dontbug debugger works](https://github.com/sidkshatriya/dontbug/wiki/How-the-Dontbug-Debugger-works)
