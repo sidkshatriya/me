@@ -679,6 +679,9 @@ the purpose of this post is really to get you familiar with `rr`. Solving
 the bug will come soon.
 
 ### `debuginfod` interlude
+_Note that `rr.soft` itself does NOT need debuginfo/debuginfod to peform record/replay.
+This interlude is about why the gdb debugger may need debuginfo -- most conveniently downloaded
+using debuginfod._
 
 In the above `gdb` transcript you may have noticed that we stepped into the
 `fork` glibc function and we saw C source code and not assembly !
@@ -698,8 +701,7 @@ The main benefit of `debuginfod` is that it allows you to drill down
 into the source code any any of the library/external program dependencies
 of the program you're debugging _very easily_.
 
-Note that `rr.soft` itself does NOT need debuginfo to peform
-record/replay.  Only if you want to drill down into the source code of
+Only if you want to drill down into the source code of
 your program/library you're debugging with `gdb` do you need debuginfo
 (whether obtained via `debuginfod` or via the installation of relevant
 packages through your distro package manager or whether embedded in the
