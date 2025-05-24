@@ -4,10 +4,13 @@ _23 May 2025_
 
 # Record/Replay in a VM on macOS: A tutorial
 
-I've modified the awesome [`rr`
-debugger](https://github.com/rr-debugger/rr.git) so that it can run
-without needing access to CPU Hardware Performance counters.
+_The topic of this blog post is to teach you how to record/replay
+and debug a program using `rr.soft` through a small example program
+written in C_.
 
+First a bit of context: I've modified the awesome [`rr`
+debugger](https://github.com/rr-debugger/rr.git) so that it can run
+without needing access to CPU Hardware Performance counters. 
 I call this variant, _Software Counters_ mode `rr` or `rr.soft`
 for short. `rr.soft` supports aarch64 Linux (recent kernels)
 in addition to x86_64 Linux. To learn more about `rr.soft`
@@ -20,12 +23,10 @@ on Apple silicon macOS**.  This is _not possible_ using [upstream
 performance counters. Since `rr.soft` uses lightweight instrumentation,
 access to CPU performance counters is not necessary.
 
-**The topic of this blog post is to teach you how to record/replay
-and debug a program using `rr.soft` through a small example program
-written in C**.
-
-Along the way we'll learn some advanced aspects of `rr` in general and
-`rr.soft` specifically. This tutorial can be run on any platform where
+We will learn how to record/replay and debug a program using `rr.soft`
+through a small example program written in C. Along the way we'll
+learn some advanced aspects of `rr` in general and`rr.soft` specifically.
+This tutorial can be run on any platform where
 `rr` / `rr.soft` works. But it would be interesting to try this tutorial
 in a Linux VM on Apple silicon macOS.
 
