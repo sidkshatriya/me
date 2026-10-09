@@ -14,7 +14,7 @@ without needing access to CPU Hardware Performance counters.
 I call this variant, _Software Counters_ mode `rr` or `rr.soft`
 for short. **`rr.soft` supports aarch64 Linux (recent kernels)
 in addition to x86_64 Linux**. To learn more about `rr.soft`
-see [previous blog post](009-rr-everywhere.md) or the github
+see [previous blog post](008-rr-everywhere.md) or the github
 [repo](https://github.com/sidkshatriya/rr.soft).
 
 One compelling use case is running record/replay on **Linux VMs
